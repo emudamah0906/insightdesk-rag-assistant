@@ -73,12 +73,16 @@ def _build_prompt(query: str, contexts: list) -> str:
 def _anthropic_generate(query: str, contexts: list) -> str:
     import anthropic  # pip install anthropic
     client = anthropic.Anthropic()
-    msg = client.messages.create(
+    # Newer Claude models deprecate `temperature`; only send it if explicitly requested
+    # via LLM_TEMPERATURE so the call works across both old and new models.
+    params = dict(
         model=os.getenv("ANTHROPIC_MODEL", "claude-opus-4-8"),
-        max_tokens=400, temperature=0, system=SYSTEM,
+        max_tokens=400, system=SYSTEM,
         messages=[{"role": "user", "content": _build_prompt(query, contexts)}],
     )
-    return msg.content[0].text.strip()
+    if os.getenv("LLM_TEMPERATURE"):
+        params["temperature"] = float(os.getenv("LLM_TEMPERATURE"))
+    return client.messages.create(**params).content[0].text.strip()
 
 
 def _bedrock_generate(query: str, contexts: list) -> str:
