@@ -11,6 +11,7 @@ from __future__ import annotations
 import sys, pathlib, time
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))  # allow direct execution
 
+import config  # noqa: F401  -- loads .env into os.environ on import
 from retriever import HybridRetriever
 from rerank import rerank
 from llm import generate, IDK, active_provider
