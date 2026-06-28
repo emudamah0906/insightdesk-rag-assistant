@@ -1,0 +1,12 @@
+{"question": "How long do refunds take?", "expected_source": "billing.md", "must_contain": ["5", "business days"]}
+{"question": "What is the refund window?", "expected_source": "billing.md", "must_contain": ["30 days"]}
+{"question": "What does a 429 error mean?", "expected_source": "technical.md", "must_contain": ["rate limited"]}
+{"question": "What does a 401 error mean?", "expected_source": "technical.md", "must_contain": ["invalid", "key"]}
+{"question": "How do I enable two factor authentication?", "expected_source": "account.md", "must_contain": ["2FA", "Security"]}
+{"question": "Are you SOC 2 certified?", "expected_source": "account.md", "must_contain": ["SOC 2"]}
+{"question": "What is the API rate limit on the Pro plan?", "expected_source": "technical.md", "must_contain": ["100 requests"]}
+{"question": "How do I transfer account ownership?", "expected_source": "account.md", "must_contain": ["Transfer Ownership"]}
+{"question": "Do you ship to the EU?", "expected_source": "shipping.md", "must_contain": ["EU"]}
+{"question": "What is the hardware warranty period?", "expected_source": "shipping.md", "must_contain": ["1-year", "warranty"]}
+{"question": "How are payments retried when they fail?", "expected_source": "billing.md", "must_contain": ["3 times", "7 days"]}
+{"question": "How is my data encrypted?", "expected_source": "account.md", "must_contain": ["AES-256", "TLS"]}

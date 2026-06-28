@@ -1,0 +1,41 @@
+id,text,intent,priority
+1,I was charged twice this month please refund the extra payment,billing,high
+2,How do I download my past invoices for accounting,billing,low
+3,My credit card payment failed and account is suspended,billing,high
+4,Can I get a refund I cancelled within 30 days,billing,medium
+5,Upgrade my plan to enterprise and prorate the charge,billing,low
+6,I cannot log in it says my account is locked,technical,high
+7,Getting a 429 error on the API what does that mean,technical,medium
+8,API key returns 401 unauthorized after rotation,technical,high
+9,Is there an outage the dashboard wont load,technical,high
+10,How do I export all my data as json,technical,low
+11,Password reset email never arrived,technical,medium
+12,I want to enable two factor authentication,account,low
+13,How do I transfer account ownership to a colleague,account,medium
+14,Are you SOC 2 compliant where is the certificate,account,low
+15,Please delete my account and all my data,account,high
+16,What permissions does the viewer role have,account,low
+17,My hardware sensor shipment has not arrived,shipping,medium
+18,Tracking number has not updated in a week,shipping,medium
+19,The sensor is defective can I get a replacement,shipping,high
+20,Do you ship to Germany and how long does it take,shipping,low
+21,How do I install the bluetooth sensor,shipping,low
+22,This service is terrible I want to speak to a manager,complaint,high
+23,Worst support ever nobody answers my tickets,complaint,high
+24,Charge appeared on my card I do not recognize,billing,high
+25,Why is my monthly invoice higher than last month,billing,medium
+26,App keeps crashing when I open the reports page,technical,high
+27,Need to increase my API rate limit on pro plan,technical,medium
+28,How do I add a new admin to my team,account,low
+29,Lost my 2FA device how do I regain access,account,high
+30,Return an unopened sensor for a refund,shipping,low
+31,I keep getting logged out every few minutes,technical,medium
+32,Can you explain the refund policy timeline,billing,low
+33,Set up SSO for my company account,account,medium
+34,The express shipping I paid for was not used,shipping,medium
+35,Your product overcharged me and I am furious,complaint,high
+36,How secure is my data is it encrypted,account,low
+37,Invoice has the wrong billing address,billing,low
+38,Getting rate limited even under 100 requests,technical,high
+39,Need to cancel subscription and confirm no more charges,billing,medium
+40,Sensor wont pair with the mobile app,shipping,medium
